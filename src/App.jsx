@@ -62,13 +62,13 @@ export default function App() {
                   maxLength={5}
                 />
               </div>
-              <div className="space-y-2 h-28">
+               <div className="space-y-2 h-20">
                 <Label htmlFor="year">Select Year</Label>
                 <Select value={year} onValueChange={setYear}>
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Select year" />
                   </SelectTrigger>
-                  <SelectContent position="popper" className="w-full">
+                  <SelectContent position="popper" className="w-full bg-white border-1 z-50">
                     <SelectItem value="2025">2025</SelectItem>
                     <SelectItem value="2024">2024</SelectItem>
                   </SelectContent>
