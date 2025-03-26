@@ -26,7 +26,7 @@ export default function App() {
     setLoading(true)
 
     try {
-      const response = await fetch(`http://localhost:3001/api/case/${year}/${ackNumber}`)
+      const response = await fetch(`https://cyber-backend-five.vercel.app/api/case/${year}/${ackNumber}`)
       const data = await response.json()
 
       if (response.ok) {
